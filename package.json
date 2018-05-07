@@ -1,7 +1,7 @@
 {
   "name": "backend-task1",
   "version": "1.0.0",
-  "description": "Simple Sign Up application",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/ayushmalviya27/Backend-Task1.git"
   },
-  "author": "Ayush Malviya",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ayushmalviya27/Backend-Task1/issues"
   },
-  "homepage": "https://github.com/ayushmalviya27/Backend-Task1#readme",
-  "dependencies": {
-    "morgan": "^1.9.0"
-  }
+  "homepage": "https://github.com/ayushmalviya27/Backend-Task1#readme"
 }
