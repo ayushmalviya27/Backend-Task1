@@ -2,18 +2,35 @@
 <html>
 <head>
 	<title>Login Portal</title>
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCt-a0M4AIYhUHZQFKZLAlk7RFppzRqmVc",
+	    authDomain: "backend-task.firebaseapp.com",
+	    databaseURL: "https://backend-task.firebaseio.com",
+	    projectId: "backend-task",
+	    storageBucket: "backend-task.appspot.com",
+	    messagingSenderId: "395412738609"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 </head>
 <body>
 	<h2>Room booking Portal</h2>
 	<h3>Login</h3>
-	<form>
-		<label>Registration No</label><input type="number" name="regno">
+	<div id="roomform">
+		<label>Email id</label><input type="Email" id="emailid">
 		<br />
 		<br />
-		<label>Password</label><input type="Password" name="pass">
+		<label>Password</label><input type="Password" id = "pass">
 		<br />
 		<br />
-		<button type="submit">Log In</button>
-	</form>
+		<button onclick={roomlogin()}>Log In</button>
+		<button onclick={roompass()}>Forgot Password</button>
+	</div>
+	<button onclick={roomsignout()} id = "roomout">Sign Out</button>
+	
+	<script src="js/login.js"></script>
 </body>
 </html>
