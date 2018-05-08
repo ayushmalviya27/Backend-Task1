@@ -24,7 +24,7 @@ app.get('/',function(request,response){
 response.render(__dirname + '/views/home.ejs');
 });
 
-app.get('/',function(req,res){
+app.get('/send',function(req,res){
 var mailOptions={
    to : req.query.user_email,
    subject : 'Welcome to Generic app',
