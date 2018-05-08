@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ayushmalviya27/Backend-Task1#readme",
   "dependencies": {
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.4"
   }
 }
