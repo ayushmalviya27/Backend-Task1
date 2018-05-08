@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pehla aap</title>
+
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyA7MCXZl34eK1b2Zn46sxWAlNpuutQ5xwU",
+		    authDomain: "first-project-2208.firebaseapp.com",
+		    databaseURL: "https://first-project-2208.firebaseio.com",
+		    projectId: "first-project-2208",
+		    storageBucket: "first-project-2208.appspot.com",
+		    messagingSenderId: "293363481158"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+	</head>
+	<body>
+		<h1>Voting App</h1>
+		<h2>Login with Firebase.</h2>
+		<input type="text" id="addrest" />
+		<button class="btn btn-primary" onclick={addRest()}>Add Restaurant.</button>
+
+		<h1 id="name"></h1>
+		<button id="signIn" onclick={signInWithGoogle()}>
+			Login With Google
+		</button>
+		<button id="signOut" onclick={signoutFun()}>LogOUT</button>
+		<script src = "js/login.js"></script>
+		<script src="js/voting.js"></script>
+	</body>
+</html>
