@@ -1,0 +1,24 @@
+{
+  "name": "backend-task1",
+  "version": "1.0.0",
+  "description": "Login Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushmalviya27/Backend-Task1.git"
+  },
+  "author": "Priyam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushmalviya27/Backend-Task1/issues"
+  },
+  "homepage": "https://github.com/ayushmalviya27/Backend-Task1#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
