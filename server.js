@@ -37,7 +37,7 @@ console.log(mailOptions);
 		res.end("error");
 		}
 		else{
-		console.log("Message sent: " + response.message);
+		console.log("Message sent: " + response);
 		res.end("sent");
 		}
 	});
