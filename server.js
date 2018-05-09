@@ -1,7 +1,7 @@
 var express = require('express')
-var logger = require('morgan')
-var nodemailer = require('nodemailer');
-var credentials = require('./Credentials.js');
+var logger = require('morgan')						
+var nodemailer = require('nodemailer');						
+var credentials = require('./Credentials.js');				//for importing username/password
 
 var app = express()
 
@@ -9,8 +9,8 @@ var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     auth: {
-        user: credentials.mailID,//mail,
-        pass: credentials.passw
+        user: credentials.mailID,		//email id imported from file
+        pass: credentials.password		//password imported from file
     }
 });
 
@@ -20,10 +20,14 @@ app.use(express.static('views'))
 app.set('views', __dirname + '/views')
 app.use(logger('dev'))
 
+
+//redering webpage
 app.get('/',function(request,response){
 response.render(__dirname + '/views/home.ejs');
 });
 
+
+//sending mail
 app.get('/send',function(req,res){
 var mailOptions={
    to : req.query.user_email,
