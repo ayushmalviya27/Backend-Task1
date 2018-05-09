@@ -35,3 +35,15 @@ function roomsignout(){
 	});
 	
 }
+
+function roompass(){
+	var auth = firebase.auth();
+	var emailAddress = document.getElementById("emailid").value;
+
+	auth.sendPasswordResetEmail(emailAddress).then(function() {
+	  // Email sent.
+	}).catch(function(error) {
+	  console.log(error);
+	});
+
+}
