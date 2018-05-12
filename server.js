@@ -10,7 +10,7 @@ var smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     auth: {
         user: credentials.mailID,		//email id imported from file
-        pass: credentials.password		//password imported from file
+        pass: credentials.passw		//password imported from file
     }
 });
 
